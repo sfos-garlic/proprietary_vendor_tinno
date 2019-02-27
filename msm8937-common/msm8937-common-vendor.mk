@@ -638,6 +638,60 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
     vendor/tinno/msm8937-common/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so
 
+# WFD
+PRODUCT_COPY_FILES += \
+     vendor/tinno/msm8937-common/proprietary/bin/wfdservice:system/bin/wfdservice \
+     vendor/tinno/msm8937-common/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
+     vendor/tinno/msm8937-common/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
+     vendor/tinno/msm8937-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
+     vendor/tinno/msm8937-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+     vendor/tinno/msm8937-common/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libaacwrapper.so:system/lib/libaacwrapper.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
+     vendor/tinno/msm8937-common/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libaacwrapper.so:system/lib64/libaacwrapper.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
+     vendor/tinno/msm8937-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
+     vendor/tinno/msm8937-common/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
+     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so
+
 # VNDK libs from 11
 PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/vendor/lib/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk-sp/libcutils.so \
@@ -666,4 +720,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
     android.hardware.gnss@2.0-service-qti \
     vendor.qti.gnss@3.0-service \
-    manifest_android.hardware.drm@1.3-service.widevine
+    manifest_android.hardware.drm@1.3-service.widevine \
+    WfdService \
+    WfdCommon

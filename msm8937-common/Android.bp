@@ -264,6 +264,17 @@ android_app_import {
 	soc_specific: true,
 }
 
+android_app_import {
+	name: "WfdService",
+	owner: "motorola",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
 dex_import {
 	name: "QPerformance",
 	owner: "tinno",
@@ -280,6 +291,12 @@ dex_import {
 	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
 	owner: "tinno",
 	jars: ["proprietary/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "motorola",
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 prebuilt_etc_xml {

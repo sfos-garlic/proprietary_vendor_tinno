@@ -44,6 +44,66 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libMpeg4SwEncoder",
+	owner: "tinno",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libMpeg4SwEncoder.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libMpeg4SwEncoder.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libOmxSwVdec",
+	owner: "tinno",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libOmxSwVdec.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libOmxSwVdec.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libOmxSwVencMpeg4",
+	owner: "tinno",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libOmxSwVencMpeg4.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libOmxSwVencMpeg4.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libgpustats",
 	owner: "tinno",
 	strip: {
@@ -216,6 +276,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WfdService",
+	owner: "tinno",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "ims",
 	owner: "tinno",
 	apk: "proprietary/priv-app/ims/ims.apk",
@@ -269,6 +340,12 @@ dex_import {
 	name: "UxPerformance",
 	owner: "tinno",
 	jars: ["proprietary/framework/UxPerformance.jar"],
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "tinno",
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {

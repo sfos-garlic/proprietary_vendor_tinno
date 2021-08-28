@@ -10,4 +10,4 @@ service vendor.dspservice /vendor/bin/dspservice
 	interface vendor.qti.hardware.dsp@1.0::IDspService dspservice
 
 	# uncomment below to disable service at boot
-	# disabled
+	disabled

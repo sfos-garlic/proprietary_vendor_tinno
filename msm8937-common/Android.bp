@@ -200,17 +200,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "WfdService",
-	owner: "tinno",
-	apk: "proprietary/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "tinno",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -322,12 +311,6 @@ dex_import {
 	name: "UxPerformance",
 	owner: "tinno",
 	jars: ["proprietary/framework/UxPerformance.jar"],
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "tinno",
-	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
 dex_import {

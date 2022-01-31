@@ -319,18 +319,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "QPerformance",
-	owner: "tinno",
-	jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
-	name: "UxPerformance",
-	owner: "tinno",
-	jars: ["proprietary/framework/UxPerformance.jar"],
-}
-
-dex_import {
 	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
 	owner: "tinno",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],

@@ -4,7 +4,7 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 
-service vendor.perfservice /system/bin/perfservice
+service vendor.perfservice /system_ext/bin/perfservice
     class main
     user system
     group system readproc
